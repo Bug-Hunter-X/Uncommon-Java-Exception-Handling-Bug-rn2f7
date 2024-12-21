@@ -1,0 +1,1 @@
+This repository demonstrates a subtle bug in Java exception handling. The main program divides an integer by zero which should trigger an ArithmeticException. The try-catch block handles this exception correctly. However, adding a finally block with a potential error, the original ArithmeticException may be masked or its stack trace might not be complete.
